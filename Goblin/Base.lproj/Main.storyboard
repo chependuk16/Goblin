@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,40 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Goblin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="гобл.png" translatesAutoresizingMaskIntoConstraints="NO" id="VMb-X1-fdb">
+                                <rect key="frame" x="0.0" y="0.0" width="209.5" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="кли.png" translatesAutoresizingMaskIntoConstraints="NO" id="NLJ-6k-teH">
+                                <rect key="frame" x="209.5" y="0.0" width="204.5" height="896"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VMb-X1-fdb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3DF-Yj-Com"/>
+                            <constraint firstItem="NLJ-6k-teH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="43w-H0-xv8"/>
+                            <constraint firstAttribute="trailing" secondItem="NLJ-6k-teH" secondAttribute="trailing" id="4Z2-di-LZL"/>
+                            <constraint firstAttribute="bottom" secondItem="VMb-X1-fdb" secondAttribute="bottom" id="JTx-Au-z48"/>
+                            <constraint firstItem="VMb-X1-fdb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uc1-yS-7hx"/>
+                            <constraint firstItem="NLJ-6k-teH" firstAttribute="leading" secondItem="VMb-X1-fdb" secondAttribute="trailing" id="cOW-Z9-zgV"/>
+                            <constraint firstItem="NLJ-6k-teH" firstAttribute="width" secondItem="VMb-X1-fdb" secondAttribute="width" multiplier="0.978495" id="jnB-b3-RLr"/>
+                            <constraint firstItem="NLJ-6k-teH" firstAttribute="leading" secondItem="VMb-X1-fdb" secondAttribute="trailing" id="utY-p0-oI7"/>
+                            <constraint firstAttribute="bottom" secondItem="NLJ-6k-teH" secondAttribute="bottom" id="wOh-eF-TUM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116.51785714285714" y="2.8985507246376816"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="гобл.png" width="636" height="576"/>
+        <image name="кли.png" width="636" height="576"/>
+    </resources>
 </document>
